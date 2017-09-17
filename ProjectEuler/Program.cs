@@ -56,6 +56,10 @@ namespace ProjectEuler1 {
                     case EulerProblems.LargestPrimeFactor:
                         LargestPrimeFactor.ComputeLargestPrime();
                         break;
+
+                    case EulerProblems.LargestPalindromeProduct:
+                        LargestPalindromeProduct.GetLargestPalindrome();
+                        break;
                 }
             }
 
