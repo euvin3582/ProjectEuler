@@ -18,20 +18,20 @@ namespace ProjectEuler1 {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.Write(description);
 
-            var id = 1;
+            int id = -1;
             foreach(var value in Enum.GetValues(typeof(EulerProblems))) {
                 Console.ForegroundColor = ConsoleColor.Blue;
-                Console.Write(id + ": " + value + "\n");
-                id =(int) value;
+                Console.Write((int)value + ": " + value + "\n");
+                id = (int)value;
             }
 
             Console.ForegroundColor = ConsoleColor.White;
             Console.Write("\nType in a number to get Problems answers.\n");
             var input = Console.ReadKey();
-
-            int number = 0;
+            Console.WriteLine();
 
             // stops wrong inputs
+            int number = 0;
             while(!Int32.TryParse(input.KeyChar.ToString(), out number) || (number > id || number == 0)) {
                 Console.Write("\nPick a number from the list of problems.\n");
                 input = Console.ReadKey();
@@ -47,6 +47,10 @@ namespace ProjectEuler1 {
                 switch(problem) {
                     case EulerProblems.MultiplesOf3And5:
                         MultiplesOf3And5.SolveMultiples();
+                        break;
+
+                    case EulerProblems.EvenFibonacciNumbers:
+                        EvenFibonacciNumbers.SolveEvenFibonacci();
                         break;
                 }
             }

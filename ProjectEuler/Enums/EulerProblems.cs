@@ -7,5 +7,7 @@ using System.Threading.Tasks;
 namespace ProjectEuler1.Enums {
     public enum EulerProblems {
         MultiplesOf3And5 = 1,
+        EvenFibonacciNumbers = 2,
+
     }
 }
