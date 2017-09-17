@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Enums\EulerProblems.cs" />
     <Compile Include="Problems\EvenFibonacciNumbers.cs" />
+    <Compile Include="Problems\LargestPrimeFactor.cs" />
     <Compile Include="Problems\MultiplesOf3And5.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

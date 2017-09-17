@@ -52,6 +52,10 @@ namespace ProjectEuler1 {
                     case EulerProblems.EvenFibonacciNumbers:
                         EvenFibonacciNumbers.SolveEvenFibonacci();
                         break;
+
+                    case EulerProblems.LargestPrimeFactor:
+                        LargestPrimeFactor.ComputeLargestPrime();
+                        break;
                 }
             }
 
